@@ -1,0 +1,387 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+ <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Hello World;</div>
+                <div class="intro-heading">We're here to bring your stories to life!</div>
+                <a href="#about" class="page-scroll btn btn-xl">Show me how</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How we work?</h2>
+                    <span class="section-underline"></span>
+                    <h3 class="section-subheading text-muted">The path to your success.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step: 1</h4>
+                                    <h4 class="subheading">Review User Story</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Client brings an user story and we take care of the rest! Starting from analyzing project challenges to technical specification, everything is taken into consideration while evaluating the user story.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step: 2</h4>
+                                    <h4 class="subheading">Give Quotation</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Based on the challenges identified, a report is generated proposing a quotation to implement the user story. Once the client agrees with the quotation, we move forward.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step: 3</h4>
+                                    <h4 class="subheading">Present Technical Specification</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Next, a technical specification is created which contains high level architecture, project management methodologies and development environment details etc. Client reviews and signs this specification document.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step: 4</h4>
+                                    <h4 class="subheading">Develop and Implement User Story</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">As soon as technical specification document is completed, our developement team starts implementation which is also a continuous integration.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step: 5</h4>
+                                    <h4 class="subheading">Deploy Project</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">When the development and testing phases are completed by the team, the project gets deployed. A detailed documentation of the project is also created for the users</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image last">
+                                <h4>And your amazing story
+                                    <br>is Live!
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tagline section -->
+    <section id="tagline1">
+        <div class="container">
+            <div class="row multi-columns-row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <i class="fa fa-code icon"></i>
+                    <div class="number">
+                        <p>
+                            <span class="prefix"></span>
+                            <span class="counter">100,000+</span>
+                            <span class="sufix"></span>
+                        </p>
+                    </div>
+                    <p>Lines of Code</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <i class="fa fa-coffee icon"></i>
+                    <div class="number">
+                        <p>
+                            <span class="prefix"></span>
+                            <span class="counter">500+</span>
+                            <span class="sufix"></span>
+                        </p>
+                    </div>
+                    <p>Cups of Coffee</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <i class="fa fa-users icon"></i>
+                    <div class="number">
+                        <p>
+                            <span class="prefix"></span>
+                            <span class="counter">1</span>
+                            <span class="sufix"></span>
+                        </p>
+                    </div>
+                    <p>Small Team</p>
+                </div> 
+            </div>
+        </div>
+    </section
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Projects</h2>
+                    <span class="section-underline"></span>
+                    <h3 class="section-subheading text-muted">We are waiting for your awesome story here.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/socialpg-thumb.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Social Page Value</h4>
+                        <p class="text-muted">Branding</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/xpertclipping-thumb.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Xpert Clipping</h4>
+                        <p class="text-muted">Photo Editing</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#about" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/yourproject.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Your Project</h4>
+                        <p class="text-muted">Project type</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tagline section -->
+    <section id="tagline2">
+        <div class="container">
+            <span class="taglineText2">
+                Our deliverables are tailor-made to suit your needs! 
+            </span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Perks of working with us</h2>
+                    <span class="section-underline"></span>
+                    <h3 class="section-subheading text-muted">Reasons why you should choose us</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Search Engine Optimization</h4>
+                    <p class="text-muted">Rank your project high in the organic search leading to a higher number of visitors to your website.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Get optimal viewing experience - ease of reading and navigation across different platforms and devices.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Secure communication between browsers and servers and get protection from malware and vulnerability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tagline section -->
+    <section id="tagline3">
+        <div class="container">
+            <span class="taglineText3">
+                <span class="taglinesSubText3">{elsebd},</span> your true business partner.
+            </span>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Super Cool Team</h2>
+                    <span class="section-underline"></span>
+                    <h3 class="section-subheading text-muted">Heroes behind the scenes of your project success.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/shahin.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Mishwar Hossain</h4>
+                        <p class="text-muted">CEO</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/nitu.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Apnan Jahan Nitu</h4>
+                        <p class="text-muted">Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/pat.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Patricia Trishna Gomes</h4>
+                        <p class="text-muted">Project Manager</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/tasneem.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tasneem Jahan</h4>
+                        <p class="text-muted">UX Designer & Frontend Developer</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/dev1.png" class="img-responsive img-circle" alt="">
+                        <h4>Monotosh Ghosh</h4>
+                        <p class="text-muted">Backend Developer</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/dev2.png" class="img-responsive img-circle" alt="">
+                        <h4>Rana Shahriar</h4>
+                        <p class="text-muted">Backend Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <span class="section-underline"></span>
+                    <h3 class="section-subheading contact-text-not-muted">Always at your service.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <form >
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-md-6 contactCol1">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 contactCol2">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>    
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 contactadd">
+                                <i class="fa fa-phone fa-3x contacticon" aria-hidden="true"></i>&nbsp
+                                <span>+880 17 15154092</span><br>
+                                <i class="fa fa-home fa-3x contacticon" aria-hidden="true"></i>&nbsp
+                                <span>
+								31, Bangabandhu Avenue, Dhaka-1000, Bangladesh
+								</span><br>
+                                <i class="fa fa-envelope fa-3x contacticon" aria-hidden="true"></i>&nbsp
+                                <span>
+								
+								<a href="mailto:contact@elsebd.com" style="color:white"> contact@elsebd.com</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="reset" class="btn btn-xl">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
